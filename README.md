@@ -29,7 +29,7 @@ I use an explicit operating loop: observe, decide, execute, verify, and recover.
 ## Public GitHub activity
 
 <p align="center">
-  <img src="./github-metrics.svg" alt="Public GitHub activity: contribution calendar and recent work" width="100%" />
+  <img src="./github-metrics.svg" alt="Public GitHub activity: contribution calendar and activity totals" width="100%" />
 </p>
 
 Generated daily from public GitHub events. Private repository activity is excluded.
