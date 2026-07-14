@@ -42,6 +42,14 @@ I treat failure modes, operator actions, and client-visible verification as arch
 
 My current work focuses on governed AI runtimes and operator controls: isolated execution, explicit permissions, multi-provider routing, checkpoints, evidence, and recovery.
 
+## Public GitHub activity
+
+<p align="center">
+  <img src="./github-metrics.svg" alt="Public GitHub activity and contribution calendar" width="480" />
+</p>
+
+Generated from public GitHub events. Private repository activity is excluded.
+
 ## Contact
 
 For systems architecture, middleware, platform engineering, or technical advisory work:
