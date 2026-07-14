@@ -38,3 +38,5 @@ I am building private product and platform systems around governed AI execution,
 
 For systems architecture, middleware, platform engineering, or technical advisory work:
 [LinkedIn](https://www.linkedin.com/in/sergei-ivanov-73856b3a7) · [kavioavio.ru](https://kavioavio.ru)
+
+<!-- github-profile-readme -->
