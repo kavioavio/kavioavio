@@ -26,12 +26,6 @@ I treat failure modes, operator actions, and client-visible verification as arch
 | Identity and policy | TLS/mTLS, SASL, Kerberos, OAuth/OIDC, ACL/RBAC, secret boundaries, and fail-closed automation |
 | Production operations | Observability, capacity planning, runbooks, rolling changes, backup/DR decisions, restore tests, and incident recovery |
 
-## Selected public work
-
-### [Kafka KRaft production blueprint](https://github.com/kavioavio/kafka-kraft-production-blueprint)
-
-A runnable three-node Kafka 4.3.1 KRaft lab with immutable image pins, deterministic validation, produce/consume smoke tests, a one-broker failure drill, reachable-history leak checks, and separate production design guidance.
-
 ## Core technologies
 
 `Apache Kafka` · `KRaft` · `IBM MQ` · `IBM Integration Bus` · `Go` · `Python` · `Linux` · `PostgreSQL` · `Docker` · `Kubernetes` · `Ansible` · `Prometheus` · `Grafana`
