@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid meet">
+  <title id="title">Architecture scope</title>
+  <desc id="desc">A systems architecture map connecting integration inputs, distributed runtime, identity and policy, verified outcomes, operations, and recovery.</desc>
+  <style>
+    .mobile-only { display: none; }
+    @media (max-width: 600px) {
+      .desktop-only { display: none; }
+      .mobile-only { display: inline; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050d1b"/>
+      <stop offset="0.56" stop-color="#0a1730"/>
+      <stop offset="1" stop-color="#11284b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#24d4ff"/>
+      <stop offset="0.52" stop-color="#62f0c3"/>
+      <stop offset="1" stop-color="#8b67ff"/>
+    </linearGradient>
+    <linearGradient id="runtime" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#132a4c"/>
+      <stop offset="1" stop-color="#0c1d38"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#8db4da" stroke-width="1" opacity="0.065"/>
+    </pattern>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#54d9f4"/>
+    </marker>
+    <marker id="arrow-violet" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#9a7cff"/>
+    </marker>
+  </defs>
+
+  <g class="desktop-only">
+  <rect x="1" y="1" width="1398" height="758" rx="26" fill="url(#bg)" stroke="#284766" stroke-width="2"/>
+  <rect x="1" y="1" width="1398" height="758" rx="26" fill="url(#grid)"/>
+  <circle cx="1250" cy="80" r="180" fill="#2a7cff" opacity="0.08" filter="url(#soft)"/>
+  <circle cx="160" cy="690" r="160" fill="#7450ff" opacity="0.07" filter="url(#soft)"/>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="64" y="48" width="112" height="6" rx="3" fill="url(#accent)"/>
+    <text x="64" y="101" fill="#f2f7ff" font-size="34" font-weight="720" letter-spacing="1.4">ARCHITECTURE SCOPE</text>
+    <text x="64" y="136" fill="#91a9c5" font-size="18">Production systems viewed across runtime, authority, verification, and recovery paths</text>
+
+    <g transform="translate(64 185)">
+      <rect width="1272" height="96" rx="18" fill="#0e2340" stroke="#2e687b" stroke-width="1.5"/>
+      <rect width="9" height="96" rx="4.5" fill="#62f0c3"/>
+      <text x="32" y="35" fill="#8af6d2" font-size="16" font-weight="700" letter-spacing="1.5">IDENTITY + POLICY PLANE</text>
+      <text x="32" y="70" fill="#e5f2ff" font-size="22" font-weight="620">TLS/mTLS  ·  SASL/Kerberos  ·  OAuth/OIDC  ·  ACL/RBAC  ·  secrets  ·  approval boundaries</text>
+    </g>
+
+    <g transform="translate(64 320)">
+      <text x="0" y="-18" fill="#7992b0" font-size="14" font-weight="700" letter-spacing="1.6">SYSTEM INPUTS</text>
+      <rect width="205" height="210" rx="20" fill="#0e203b" stroke="#294d70" stroke-width="1.5"/>
+      <g fill="#dceafa" font-size="21" font-weight="620">
+        <text x="30" y="56">APIs</text>
+        <text x="30" y="111">Events</text>
+        <text x="30" y="166">CDC</text>
+      </g>
+      <g stroke="#3d668b" stroke-width="1">
+        <path d="M30 75H175M30 130H175"/>
+      </g>
+    </g>
+
+    <path d="M282 425H335" fill="none" stroke="#54d9f4" stroke-width="3" marker-end="url(#arrow-cyan)"/>
+
+    <g transform="translate(350 320)">
+      <text x="0" y="-18" fill="#7992b0" font-size="14" font-weight="700" letter-spacing="1.6">DISTRIBUTED RUNTIME</text>
+      <rect width="690" height="210" rx="20" fill="url(#runtime)" stroke="#34647e" stroke-width="1.7"/>
+
+      <g transform="translate(28 44)">
+        <rect width="185" height="122" rx="16" fill="#102744" stroke="#2f6680"/>
+        <text x="20" y="38" fill="#75e1fb" font-size="14" font-weight="700" letter-spacing="1.1">INTEGRATION</text>
+        <text x="20" y="75" fill="#eff7ff" font-size="21" font-weight="650">Adapters</text>
+        <text x="20" y="102" fill="#9cb2ca" font-size="16">contracts · routing</text>
+      </g>
+
+      <path d="M228 105H270" fill="none" stroke="#54d9f4" stroke-width="3" marker-end="url(#arrow-cyan)"/>
+
+      <g transform="translate(285 44)">
+        <rect width="185" height="122" rx="16" fill="#13304e" stroke="#4e8d9d" stroke-width="1.5"/>
+        <text x="20" y="38" fill="#8af6d2" font-size="14" font-weight="700" letter-spacing="1.1">STREAMING</text>
+        <text x="20" y="75" fill="#effff9" font-size="21" font-weight="680">Kafka/KRaft</text>
+        <text x="20" y="102" fill="#a8c9c0" font-size="16">quorum · RF · ISR</text>
+      </g>
+
+      <path d="M485 105H527" fill="none" stroke="#54d9f4" stroke-width="3" marker-end="url(#arrow-cyan)"/>
+
+      <g transform="translate(542 44)">
+        <rect width="120" height="122" rx="16" fill="#18294b" stroke="#5f5e98"/>
+        <text x="18" y="38" fill="#b5a7ff" font-size="14" font-weight="700" letter-spacing="1.1">STATE</text>
+        <text x="18" y="75" fill="#f3f0ff" font-size="20" font-weight="650">Services</text>
+        <text x="18" y="102" fill="#b5afcf" font-size="15">data · APIs</text>
+      </g>
+    </g>
+
+    <path d="M1054 425H1107" fill="none" stroke="#9a7cff" stroke-width="3" marker-end="url(#arrow-violet)"/>
+
+    <g transform="translate(1122 320)">
+      <text x="0" y="-18" fill="#7992b0" font-size="14" font-weight="700" letter-spacing="1.6">VERIFIED OUTCOMES</text>
+      <rect width="214" height="210" rx="20" fill="#121f3d" stroke="#514f87" stroke-width="1.5"/>
+      <g fill="#e8e6ff" font-size="18" font-weight="620">
+        <text x="28" y="55">Availability</text>
+        <text x="28" y="108">Audit trail</text>
+        <text x="28" y="161">Client proof</text>
+      </g>
+      <g stroke="#575783" stroke-width="1">
+        <path d="M28 76H186M28 129H186"/>
+      </g>
+    </g>
+
+    <g transform="translate(64 575)">
+      <rect width="1272" height="106" rx="18" fill="#111d3a" stroke="#524c85" stroke-width="1.5"/>
+      <rect width="9" height="106" rx="4.5" fill="#8b67ff"/>
+      <text x="32" y="38" fill="#b9a9ff" font-size="16" font-weight="700" letter-spacing="1.5">OPERATE + RECOVER</text>
+      <text x="32" y="75" fill="#e9e8ff" font-size="22" font-weight="620">Metrics/SLOs  ·  capacity  ·  runbooks  ·  rolling change  ·  failure drills  ·  backup/DR  ·  rollback</text>
+    </g>
+
+    <path d="M740 282V307" fill="none" stroke="#62f0c3" stroke-width="2.5" stroke-dasharray="6 7" marker-end="url(#arrow-cyan)" opacity="0.8"/>
+    <path d="M740 550V568" fill="none" stroke="#9a7cff" stroke-width="2.5" stroke-dasharray="6 7" marker-end="url(#arrow-violet)" opacity="0.8"/>
+
+    <text x="700" y="724" text-anchor="middle" fill="#8198b5" font-size="15" font-weight="600" letter-spacing="1.5">FAILURE MODES AND OPERATOR ACTIONS ARE PART OF THE DESIGN</text>
+  </g>
+  </g>
+
+  <g class="mobile-only" font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="1" y="1" width="1398" height="758" rx="26" fill="url(#bg)" stroke="#284766" stroke-width="2"/>
+    <rect x="1" y="1" width="1398" height="758" rx="26" fill="url(#grid)"/>
+    <circle cx="1220" cy="70" r="180" fill="#2a7cff" opacity="0.08" filter="url(#soft)"/>
+
+    <rect x="60" y="42" width="112" height="7" rx="3.5" fill="url(#accent)"/>
+    <text x="60" y="98" fill="#f2f7ff" font-size="39" font-weight="720" letter-spacing="1.2">ARCHITECTURE SCOPE</text>
+    <text x="60" y="137" fill="#9bb1ca" font-size="25">Runtime, authority, verification, and recovery in one design boundary</text>
+
+    <g transform="translate(60 174)">
+      <rect width="1280" height="122" rx="20" fill="#0e2340" stroke="#2e687b" stroke-width="2"/>
+      <rect width="10" height="122" rx="5" fill="#62f0c3"/>
+      <text x="38" y="46" fill="#8af6d2" font-size="25" font-weight="700" letter-spacing="1.2">IDENTITY + POLICY</text>
+      <text x="38" y="91" fill="#e5f2ff" font-size="30" font-weight="620">TLS/mTLS · SASL/Kerberos · OIDC · ACL/RBAC · secrets · approvals</text>
+    </g>
+
+    <path d="M700 307V330" fill="none" stroke="#62f0c3" stroke-width="4" marker-end="url(#arrow-cyan)"/>
+
+    <g transform="translate(60 344)">
+      <rect width="1280" height="170" rx="22" fill="url(#runtime)" stroke="#34647e" stroke-width="2"/>
+      <text x="38" y="49" fill="#75e1fb" font-size="25" font-weight="700" letter-spacing="1.2">DISTRIBUTED RUNTIME</text>
+      <text x="38" y="105" fill="#eff7ff" font-size="38" font-weight="680">Integration  →  Kafka/KRaft  →  services + state</text>
+      <text x="38" y="143" fill="#9db5ce" font-size="25">contracts · routing · quorum · RF/ISR · client-visible paths</text>
+    </g>
+
+    <path d="M700 525V548" fill="none" stroke="#9a7cff" stroke-width="4" marker-end="url(#arrow-violet)"/>
+
+    <g transform="translate(60 562)">
+      <rect width="1280" height="122" rx="20" fill="#111d3a" stroke="#524c85" stroke-width="2"/>
+      <rect width="10" height="122" rx="5" fill="#8b67ff"/>
+      <text x="38" y="46" fill="#b9a9ff" font-size="25" font-weight="700" letter-spacing="1.2">OPERATE + RECOVER</text>
+      <text x="38" y="91" fill="#e9e8ff" font-size="29" font-weight="620">SLOs · capacity · runbooks · failure drills · backup/DR · rollback</text>
+    </g>
+
+    <text x="700" y="726" text-anchor="middle" fill="#8da3bc" font-size="22" font-weight="620" letter-spacing="1.2">FAILURE MODES AND OPERATOR ACTIONS ARE DESIGN INPUTS</text>
+  </g>
+</svg>

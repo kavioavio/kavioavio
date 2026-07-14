@@ -1,34 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
-  <title id="title">Sergei Ivanov — Systems Architect</title>
-  <desc id="desc">Distributed platforms, middleware and governed AI systems</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="360" viewBox="0 0 1400 360" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid meet">
+  <title id="title">Sergei Ivanov, Systems Architect</title>
+  <desc id="desc">Systems architecture across distributed data, identity and policy, and production operations.</desc>
+  <style>
+    .mobile-only { display: none; }
+    @media (max-width: 600px) {
+      .desktop-only { display: none; }
+      .mobile-only { display: inline; }
+    }
+  </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#07111f"/>
-      <stop offset="0.55" stop-color="#0d2036"/>
-      <stop offset="1" stop-color="#17324f"/>
+      <stop offset="0" stop-color="#050d1b"/>
+      <stop offset="0.58" stop-color="#0a1730"/>
+      <stop offset="1" stop-color="#10264a"/>
     </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#52d3ff"/>
-      <stop offset="1" stop-color="#8b9cff"/>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#24d4ff"/>
+      <stop offset="0.52" stop-color="#62f0c3"/>
+      <stop offset="1" stop-color="#8b67ff"/>
     </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="18"/>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#122443"/>
+      <stop offset="1" stop-color="#0d1b34"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#91b8dd" stroke-width="1" opacity="0.07"/>
+    </pattern>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="24"/>
     </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#55cdea"/>
+    </marker>
   </defs>
-  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
-  <circle cx="1030" cy="75" r="120" fill="#3d8bfd" opacity="0.12" filter="url(#glow)"/>
-  <circle cx="1110" cy="250" r="150" fill="#725cff" opacity="0.10" filter="url(#glow)"/>
-  <g opacity="0.15" stroke="#9bc7e8" fill="none">
-    <path d="M820 70h95l40 38h120"/>
-    <path d="M760 165h90l42-42h130"/>
-    <path d="M845 245h70l35-35h175"/>
-    <circle cx="820" cy="70" r="5" fill="#9bc7e8"/>
-    <circle cx="760" cy="165" r="5" fill="#9bc7e8"/>
-    <circle cx="845" cy="245" r="5" fill="#9bc7e8"/>
+
+  <g class="desktop-only">
+  <rect x="1" y="1" width="1398" height="358" rx="26" fill="url(#bg)" stroke="#274366" stroke-width="2"/>
+  <rect x="1" y="1" width="1398" height="358" rx="26" fill="url(#grid)"/>
+  <circle cx="1235" cy="55" r="155" fill="#247cff" opacity="0.11" filter="url(#soft)"/>
+  <circle cx="1040" cy="330" r="130" fill="#7b4dff" opacity="0.09" filter="url(#soft)"/>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="72" y="54" width="118" height="6" rx="3" fill="url(#accent)"/>
+    <text x="72" y="128" fill="#f3f8ff" font-size="62" font-weight="720" letter-spacing="1.3">SERGEI IVANOV</text>
+    <text x="74" y="177" fill="#61dcff" font-size="30" font-weight="650" letter-spacing="0.6">SYSTEMS ARCHITECT</text>
+    <text x="74" y="222" fill="#b8c9df" font-size="22">Distributed platforms · middleware · governed AI systems</text>
+
+    <g transform="translate(74 258)">
+      <rect width="440" height="40" rx="20" fill="#102744" stroke="#315a7c"/>
+      <circle cx="22" cy="20" r="5" fill="#62f0c3"/>
+      <text x="40" y="27" fill="#dcecff" font-size="17" font-weight="620" letter-spacing="1.1">10+ YEARS · ARCHITECTURE + OPERATIONS</text>
+    </g>
+    <text x="74" y="329" fill="#8198b5" font-size="15" font-weight="600" letter-spacing="2.1">DESIGN  →  OPERATE  →  VERIFY  →  RECOVER</text>
+
+    <g transform="translate(835 42)">
+      <path d="M36 78V118M36 184V224" fill="none" stroke="#55cdea" stroke-width="2" opacity="0.75" marker-end="url(#arrow)"/>
+
+      <g>
+        <rect width="500" height="82" rx="18" fill="url(#panel)" stroke="#245477" stroke-width="1.5"/>
+        <rect width="7" height="82" rx="3.5" fill="#24d4ff"/>
+        <text x="28" y="31" fill="#76e4ff" font-size="16" font-weight="700" letter-spacing="1.6">DISTRIBUTED DATA</text>
+        <text x="28" y="60" fill="#e3efff" font-size="23" font-weight="620">Kafka/KRaft · CDC · middleware</text>
+      </g>
+
+      <g transform="translate(0 106)">
+        <rect width="500" height="82" rx="18" fill="url(#panel)" stroke="#315c6b" stroke-width="1.5"/>
+        <rect width="7" height="82" rx="3.5" fill="#62f0c3"/>
+        <text x="28" y="31" fill="#8af6d2" font-size="16" font-weight="700" letter-spacing="1.6">TRUST + CONTROL</text>
+        <text x="28" y="60" fill="#e3efff" font-size="23" font-weight="620">TLS · SASL · Kerberos · OIDC · ACL</text>
+      </g>
+
+      <g transform="translate(0 212)">
+        <rect width="500" height="82" rx="18" fill="url(#panel)" stroke="#4a477d" stroke-width="1.5"/>
+        <rect width="7" height="82" rx="3.5" fill="#8b67ff"/>
+        <text x="28" y="31" fill="#baa8ff" font-size="16" font-weight="700" letter-spacing="1.6">OPERATE + RECOVER</text>
+        <text x="28" y="60" fill="#e3efff" font-size="23" font-weight="620">Capacity · observability · failure drills</text>
+      </g>
+    </g>
   </g>
-  <rect x="72" y="64" width="76" height="6" rx="3" fill="url(#line)"/>
-  <text x="72" y="135" fill="#f3f8fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="48" font-weight="700" letter-spacing="1.5">SERGEI IVANOV</text>
-  <text x="74" y="184" fill="#9edcff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="600">Systems Architect</text>
-  <text x="74" y="232" fill="#b8c8d8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20">Distributed Platforms · Middleware · Governed AI Systems</text>
-  <text x="74" y="274" fill="#7f95aa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" letter-spacing="0.8">RELIABILITY  /  SECURITY  /  OPERABILITY</text>
+  </g>
+
+  <g class="mobile-only" font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="1" y="1" width="1398" height="358" rx="26" fill="url(#bg)" stroke="#274366" stroke-width="2"/>
+    <rect x="1" y="1" width="1398" height="358" rx="26" fill="url(#grid)"/>
+    <circle cx="1220" cy="70" r="170" fill="#247cff" opacity="0.11" filter="url(#soft)"/>
+    <rect x="64" y="42" width="122" height="7" rx="3.5" fill="url(#accent)"/>
+    <text x="64" y="116" fill="#f3f8ff" font-size="62" font-weight="720" letter-spacing="1.3">SERGEI IVANOV</text>
+    <text x="66" y="165" fill="#61dcff" font-size="32" font-weight="650" letter-spacing="0.6">SYSTEMS ARCHITECT</text>
+    <text x="66" y="211" fill="#b8c9df" font-size="27">Distributed platforms · middleware · governed AI systems</text>
+    <rect x="64" y="239" width="1272" height="45" rx="18" fill="#102744" stroke="#315a7c"/>
+    <text x="86" y="270" fill="#dcecff" font-size="25" font-weight="650">Kafka/KRaft · CDC · integration · capacity · observability · recovery</text>
+    <rect x="64" y="298" width="1272" height="38" rx="17" fill="#14233f" stroke="#4b477a"/>
+    <text x="86" y="325" fill="#d9d2ff" font-size="23" font-weight="620">TLS · SASL · Kerberos · OIDC · ACL · policy-controlled execution</text>
+  </g>
 </svg>
