@@ -18,6 +18,14 @@ I design and operate systems where reliability, security, and operator clarity m
 | Platform engineering | Go and Python services, PostgreSQL, Linux, containers, CI/CD, observability, and recovery paths |
 | Middleware security | TLS/mTLS, SASL, Kerberos, OAuth/OIDC, ACL/RBAC, secrets boundaries, and fail-closed automation |
 
+## Operating model
+
+<p align="center">
+  <img src="./assets/operating-model.svg" alt="Operating model: observe, decide, execute, verify, and recover" width="100%" />
+</p>
+
+I use an explicit operating loop: observe, decide, execute, verify, and recover. Policy, security, and auditability span the full path.
+
 ## Core stack
 
 `Apache Kafka` · `KRaft` · `Go` · `Python` · `Linux` · `PostgreSQL` · `Docker` · `Kubernetes` · `Ansible` · `Prometheus` · `Grafana`
