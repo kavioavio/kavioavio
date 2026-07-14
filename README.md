@@ -26,6 +26,14 @@ I design and operate systems where reliability, security, and operator clarity m
 
 I use an explicit operating loop: observe, decide, execute, verify, and recover. Policy, security, and auditability span the full path.
 
+## Public GitHub activity
+
+<p align="center">
+  <img src="./github-metrics.svg" alt="Public GitHub activity: contribution calendar and recent work" width="100%" />
+</p>
+
+Generated daily from public GitHub events. Private repository activity is excluded.
+
 ## Core stack
 
 `Apache Kafka` · `KRaft` · `Go` · `Python` · `Linux` · `PostgreSQL` · `Docker` · `Kubernetes` · `Ansible` · `Prometheus` · `Grafana`
