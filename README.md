@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/header.svg" alt="Sergei Ivanov — Systems Architect" width="100%" />
+  <img src="./assets/header.svg" alt="Sergei Ivanov, Systems Architect" width="100%" />
 </p>
 
 <p align="center">
@@ -7,48 +7,46 @@
   <a href="https://www.linkedin.com/in/sergei-ivanov-73856b3a7">LinkedIn</a>
 </p>
 
-I design and operate systems where reliability, security, and operator clarity matter more than demo polish. My background spans more than ten years in systems integration, middleware, production operations, and architecture.
+I am a systems architect with 10+ years in systems integration, middleware, distributed platforms, and production operations. I work across the full operating path: topology, identity, deployment, observability, failure handling, and recovery.
 
-## What I work on
+## Architecture scope
 
-| Area | Focus |
+<p align="center">
+  <img src="./assets/architecture-scope.svg" alt="Architecture scope across distributed runtime, identity and policy, operations, and recovery" width="100%" />
+</p>
+
+I treat failure modes, operator actions, and client-visible verification as architecture inputs rather than post-deployment tasks.
+
+## Focus
+
+| Area | Work |
 |---|---|
-| Distributed platforms | Kafka in KRaft mode, availability, capacity, secure client access, CDC, and operational standards |
-| Governed AI systems | Multi-agent orchestration, tenant isolation, policy-controlled execution, verifiable receipts, and human review |
-| Platform engineering | Go and Python services, PostgreSQL, Linux, containers, CI/CD, observability, and recovery paths |
-| Middleware security | TLS/mTLS, SASL, Kerberos, OAuth/OIDC, ACL/RBAC, secrets boundaries, and fail-closed automation |
+| Distributed streaming | Kafka/KRaft topology, quorum design, replication, `min.insync.replicas`, capacity, upgrades, and failure boundaries |
+| Integration and middleware | Event-driven integration, CDC, connectors, APIs, message contracts, IBM MQ, and IBM Integration Bus |
+| Identity and policy | TLS/mTLS, SASL, Kerberos, OAuth/OIDC, ACL/RBAC, secret boundaries, and fail-closed automation |
+| Production operations | Observability, capacity planning, runbooks, rolling changes, backup/DR decisions, restore tests, and incident recovery |
 
-## Operating model
+## Selected public work
 
-<p align="center">
-  <img src="./assets/operating-model.svg" alt="Operating model: observe, decide, execute, verify, and recover" width="100%" />
-</p>
+### [Kafka KRaft production blueprint](https://github.com/kavioavio/kafka-kraft-production-blueprint)
 
-I use an explicit operating loop: observe, decide, execute, verify, and recover. Policy, security, and auditability span the full path.
+A runnable three-node Kafka 4.3.1 KRaft lab with immutable image pins, deterministic validation, produce/consume smoke tests, a one-broker failure drill, reachable-history leak checks, and separate production design guidance.
 
-## Public GitHub activity
+## Core technologies
 
-<p align="center">
-  <img src="./github-metrics.svg" alt="Public GitHub activity: contribution calendar and activity totals" width="100%" />
-</p>
+`Apache Kafka` · `KRaft` · `IBM MQ` · `IBM Integration Bus` · `Go` · `Python` · `Linux` · `PostgreSQL` · `Docker` · `Kubernetes` · `Ansible` · `Prometheus` · `Grafana`
 
-Generated daily from public GitHub events. Private repository activity is excluded.
+## Engineering method
 
-## Core stack
-
-`Apache Kafka` · `KRaft` · `Go` · `Python` · `Linux` · `PostgreSQL` · `Docker` · `Kubernetes` · `Ansible` · `Prometheus` · `Grafana`
-
-## Engineering principles
-
-- Make failure modes explicit and recoverable.
-- Keep privileged execution behind narrow, auditable boundaries.
-- Prefer evidence from real runtime paths over local-only success.
-- Treat deployment, observability, backup, and rollback as part of the product.
-- Keep private infrastructure and product IP private by default.
+- Start from failure domains, authority boundaries, and recovery objectives.
+- Bind documentation claims to runnable checks or explicit evidence gaps.
+- Treat configuration, apply, readback, and rollback as one change contract.
+- Verify the real client path after infrastructure health returns.
+- Rehearse failure and clean-host recovery before relying on a design.
 
 ## Current direction
 
-I am building private product and platform systems around governed AI execution, multi-tenant runtimes, operator tooling, and verifiable automation. Public extracts are published only after security and IP review.
+My current work focuses on governed AI runtimes and operator controls: isolated execution, explicit permissions, multi-provider routing, checkpoints, evidence, and recovery.
 
 ## Contact
 
