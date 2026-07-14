@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Sergei Ivanov — Systems Architect</title>
+  <desc id="desc">Distributed platforms, middleware and governed AI systems</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#0d2036"/>
+      <stop offset="1" stop-color="#17324f"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#52d3ff"/>
+      <stop offset="1" stop-color="#8b9cff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <circle cx="1030" cy="75" r="120" fill="#3d8bfd" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="1110" cy="250" r="150" fill="#725cff" opacity="0.10" filter="url(#glow)"/>
+  <g opacity="0.15" stroke="#9bc7e8" fill="none">
+    <path d="M820 70h95l40 38h120"/>
+    <path d="M760 165h90l42-42h130"/>
+    <path d="M845 245h70l35-35h175"/>
+    <circle cx="820" cy="70" r="5" fill="#9bc7e8"/>
+    <circle cx="760" cy="165" r="5" fill="#9bc7e8"/>
+    <circle cx="845" cy="245" r="5" fill="#9bc7e8"/>
+  </g>
+  <rect x="72" y="64" width="76" height="6" rx="3" fill="url(#line)"/>
+  <text x="72" y="135" fill="#f3f8fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="48" font-weight="700" letter-spacing="1.5">SERGEI IVANOV</text>
+  <text x="74" y="184" fill="#9edcff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="600">Systems Architect</text>
+  <text x="74" y="232" fill="#b8c8d8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20">Distributed Platforms · Middleware · Governed AI Systems</text>
+  <text x="74" y="274" fill="#7f95aa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" letter-spacing="0.8">RELIABILITY  /  SECURITY  /  OPERABILITY</text>
+</svg>
