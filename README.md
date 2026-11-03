@@ -56,15 +56,27 @@ settles.
 `Linux` · `PostgreSQL` · `Docker` · `Kubernetes` · `Ansible` · `Prometheus` ·
 `Grafana`
 
-## Public repositories
+## Open source
 
-Most of what I work on lives in private repositories. The public entries on this
-account are forks I keep as working copies, not projects of mine:
+**[cc-tgbot](https://github.com/kavioavio/cc-tgbot)** — Claude Code background sessions from Telegram, and
+group assistant bots on any model. A control panel and per-session topics in Telegram, a mini-app with history and
+subagents, tool approvals as buttons, and any number of group bots, each with its own personality, project folder
+and model key (DeepSeek, GLM, Kimi, OpenRouter, Claude, Codex). One Python file, standard library only.
+[Download for macOS, Windows or Linux](https://github.com/kavioavio/cc-tgbot/releases/latest).
 
-- [`graphify`](https://github.com/kavioavio/graphify) — fork of
-  [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify).
-- [`hermes-agent`](https://github.com/kavioavio/hermes-agent) — fork of
-  [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent).
+<p align="center">
+  <a href="https://github.com/kavioavio/cc-tgbot">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kavioavio/cc-tgbot/main/docs/hero-dark.png">
+      <img src="https://raw.githubusercontent.com/kavioavio/cc-tgbot/main/docs/hero-light.png" width="720" alt="cc-tgbot mini-app: session list, a session asking a question, subagents">
+    </picture>
+  </a>
+</p>
+
+Most of my other work lives in private repositories. Two forks here are working copies, not projects of mine:
+[`graphify`](https://github.com/kavioavio/graphify) (fork of [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify))
+and [`hermes-agent`](https://github.com/kavioavio/hermes-agent) (fork of
+[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)).
 
 ## Public GitHub activity
 
