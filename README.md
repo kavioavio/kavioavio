@@ -1,15 +1,18 @@
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/comic-dark-narrow.svg">
-  <source media="(max-width: 600px)" srcset="./assets/comic-light-narrow.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/comic-dark.svg">
-  <img src="./assets/comic-light.svg" width="100%" alt="Comic. A bot: Deployed to prod, all checks green. A terminal: curl to prod fails. The bot: You're absolutely right! I never started the service.">
-</picture>
-
 ## Hi, I'm Sergei.
 
 For ten years I kept Kafka, IBM MQ and the plumbing around them running in production: the job where nobody remembers you exist until something breaks at 3 a.m. These days I work on AI agents, and the question from those years came with me: when something says it's done, how do you check?
 
-I'm building the runtime that runs the curl itself before believing "done".
+```console
+$ agent deploy --prod
+✓ Deployed. All checks passed.
+
+$ curl -sf prod/health
+curl: (7) Failed to connect
+
+$ agent "prod is down"
+You're absolutely right!
+I never started the service.
+```
 
 I also take consulting work: Kafka, messaging and integration platforms.
 
