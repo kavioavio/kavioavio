@@ -20,14 +20,14 @@ I'm building [Zidos](https://zidos.dev), an agent on its own core. Commands run 
 
 ## Open source
 
-**[cc-tgbot](https://github.com/kavioavio/cc-tgbot)** puts Claude Code in Telegram. Background sessions get their own topics, tool approvals arrive as buttons, and a mini-app shows history and subagents. It also runs group assistant bots on any model. One Python file, standard library only. [Download for macOS, Windows or Linux](https://github.com/kavioavio/cc-tgbot/releases/latest).
+**[Zidos Pager](https://github.com/zidos-dev/pager)** puts Claude Code in Telegram. Background sessions get their own topics, tool approvals arrive as buttons, and a mini-app shows history and subagents. It also runs group assistant bots on any model. One Python file, standard library only. [Download for macOS, Windows or Linux](https://github.com/zidos-dev/pager/releases/latest).
 
 <p align="center">
   <picture>
     <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/cc-tgbot-phone-dark.png">
     <source media="(max-width: 600px)" srcset="./assets/cc-tgbot-phone-light.png">
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kavioavio/cc-tgbot/main/docs/hero-dark.png">
-    <img src="https://raw.githubusercontent.com/kavioavio/cc-tgbot/main/docs/hero-light.png" width="720" alt="cc-tgbot mini-app: a session asking which cache to use, with three options as buttons">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zidos-dev/pager/main/docs/hero-dark.png">
+    <img src="https://raw.githubusercontent.com/zidos-dev/pager/main/docs/hero-light.png" width="720" alt="Zidos Pager mini-app: a session asking which cache to use, with three options as buttons">
   </picture>
 </p>
 
